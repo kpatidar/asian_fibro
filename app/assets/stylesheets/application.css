@@ -259,7 +259,8 @@ img {
 	width: 940px;
 	background: #3c3b3b;
 	padding: 10px;
-	margin-top: 10px;	
+	margin-top: 10px;
+  font-size: 13px;
 }
 
 #templatemo_content {
