@@ -14,16 +14,14 @@ Asian::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+  resources :home do
+    member do
+    end
+    collection do
+      get 'dashboard'
+      get 'contact_us'
+    end
+  end
 
   # Sample resource route with sub-resources:
   #   resources :products do
@@ -48,7 +46,7 @@ Asian::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'home#dashboard'
 
   # See how all your routes lay out with "rake routes"
 
