@@ -4,4 +4,17 @@ class HomeController < ApplicationController
   
   def contact_us
   end
+  
+  def services
+  end
+  
+  def products
+  end
+  
+  def partners
+  end
+  
+  def company
+  end
+  
 end

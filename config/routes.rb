@@ -20,6 +20,10 @@ Asian::Application.routes.draw do
     collection do
       get 'dashboard'
       get 'contact_us'
+      get 'services'
+      get 'products'
+      get 'partners'
+      get 'company'
     end
   end
 
