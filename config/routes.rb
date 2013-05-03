@@ -8,6 +8,12 @@ Asian::Application.routes.draw do
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  match 'dashboard' => 'home#dashboard', :as => :dashboard
+  match 'contact_us' => 'home#contact_us', :as => :contact_us
+  match 'services' => 'home#services', :as => :services
+  match 'products' => 'home#products', :as => :products
+  match 'partners' => 'home#partners', :as => :partners
+  match 'company' => 'home#company', :as => :company
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
@@ -18,12 +24,6 @@ Asian::Application.routes.draw do
     member do
     end
     collection do
-      get 'dashboard'
-      get 'contact_us'
-      get 'services'
-      get 'products'
-      get 'partners'
-      get 'company'
     end
   end
 
