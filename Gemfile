@@ -4,6 +4,7 @@ gem 'rails', '3.2.11'
 gem 'mysql2'
 gem 'simple_form'
 gem 'client_side_validations'
+gem 'activeadmin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
