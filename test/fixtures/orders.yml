@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customer_fname: MyString
+  customer_lname: MyString
+  customer_email: MyString
+  customer_address: MyText
+  customer_phone: MyString
+  status: MyString
+  ordered_at: 2013-05-04 14:11:39
+  delivered_at: 2013-05-04 14:11:39
+  product_id: 1
+
+two:
+  customer_fname: MyString
+  customer_lname: MyString
+  customer_email: MyString
+  customer_address: MyText
+  customer_phone: MyString
+  status: MyString
+  ordered_at: 2013-05-04 14:11:39
+  delivered_at: 2013-05-04 14:11:39
+  product_id: 1

@@ -1,0 +1,18 @@
+<div id="templatemo_content_wrapper">
+  <%= simple_form_for @order, :validate => true do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :customer_fname, :label=>false, :placeholder => "Enter First Name" %>
+      <%= f.input :customer_lname, :label=>false, :placeholder => "Enter Second Name" %>
+      <%= f.input :customer_email, :label=>false, :placeholder => "Enter Email" %>
+      <%= f.input :customer_address, :label=>false, :placeholder => "Enter Address", as: :string %>
+      <%= f.input :customer_phone, :label=>false, :placeholder => "Enter Phone Number" %>
+      <%= f.input :product_id, :label=>false, collection: Product.all.map { |p| [p.name] }, include_blank: false, :prompt =>"Select product" %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+  <% end %>
+</div>

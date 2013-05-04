@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'mysql2'
+gem 'simple_form'
+gem 'client_side_validations'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -28,7 +30,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+ gem 'debugger'
 
 group :production do
   gem 'pg'
