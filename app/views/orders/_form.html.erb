@@ -9,10 +9,7 @@
       <%= f.input :customer_address, :label=>false, :placeholder => "Enter Address", as: :string %>
       <%= f.input :customer_phone, :label=>false, :placeholder => "Enter Phone Number" %>
       <%= f.input :product_id, :label=>false, collection: Product.available_products.map { |p| [p.name] }, include_blank: false, :prompt =>"Select product" %>
-    </div>
-
-    <div class="form-actions">
-      <%= f.button :submit %>
+      <%= f.button :submit, :value=>'Order Now', :class=>"btn btn-primary" %>
     </div>
   <% end %>
 </div>

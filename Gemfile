@@ -5,6 +5,9 @@ gem 'mysql2'
 gem 'simple_form'
 gem 'client_side_validations'
 gem 'activeadmin'
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
