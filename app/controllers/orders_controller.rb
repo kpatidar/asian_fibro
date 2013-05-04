@@ -48,7 +48,7 @@ class OrdersController < ApplicationController
     respond_to do |format|
       if @order.save
         OrderNotifications.get_order(@order).deliver
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        format.html { redirect_to @order, notice: 'Order was successfully Submitted. Our team will contact you shortly. Thanks' }
         format.json { render json: @order, status: :created, location: @order }
       else
         format.html { render action: "new" }

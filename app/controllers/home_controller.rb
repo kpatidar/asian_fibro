@@ -17,4 +17,7 @@ class HomeController < ApplicationController
   def company
   end
   
+  def thanks
+  end
+  
 end
