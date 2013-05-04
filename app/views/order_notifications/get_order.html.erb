@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h4>Hi Mohsin,</h4>
+    
+    <p>
+      An order has been come from one of our customer.<br>
+      Please find below details :<br>
+    </p>
+    <p>
+      <b>
+        Customer First Name : <%= @order.customer_fname %><br>
+        Customer Last Name : <%= @order.customer_lname %><br>
+        Customer Email : <%= @order.customer_email %><br>
+        Customer Address : <%= @order.customer_address %><br>
+        Customer Contact Number : <%= @order.customer_phone %><br>
+        Ordered Product : <%= @order.product_id %><br>
+      </b>
+    </p><br>
+    Thanks,<br>
+    Kapil Patidar
+  </body>
+</html>

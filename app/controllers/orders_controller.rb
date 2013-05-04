@@ -42,9 +42,12 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(params[:order])
-
+    @order.status = "Pending"
+    @order.ordered_at = Time.now
+    
     respond_to do |format|
       if @order.save
+        OrderNotifications.get_order(@order).deliver
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render json: @order, status: :created, location: @order }
       else
