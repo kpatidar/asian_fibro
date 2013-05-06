@@ -1,15 +1,22 @@
 <div id="templatemo_content_wrapper">
-  <%= simple_form_for @order, :validate => true do |f| %>
-    <%= f.error_notification %>
+  <div class="row-fluid">
+    <div class="span6">
+      <%= simple_form_for @order, :validate => true do |f| %>
+        <%= f.error_notification %>
 
-    <div class="form-inputs">
-      <%= f.input :customer_fname, :label=>false, :placeholder => "Enter First Name" %>
-      <%= f.input :customer_lname, :label=>false, :placeholder => "Enter Second Name" %>
-      <%= f.input :customer_email, :label=>false, :placeholder => "Enter Email" %>
-      <%= f.input :customer_address, :label=>false, :placeholder => "Enter Address", as: :string %>
-      <%= f.input :customer_phone, :label=>false, :placeholder => "Enter Phone Number" %>
-      <%= f.input :product_id, :label=>false, collection: Product.available_products.map { |p| [p.name] }, include_blank: false, :prompt =>"Select product" %>
-      <%= f.button :submit, :value=>'Order Now', :class=>"btn btn-primary" %>
+        <div class="form-inputs">
+          <%= f.input :customer_fname, :label=>false, :placeholder => "Enter First Name" %>
+          <%= f.input :customer_lname, :label=>false, :placeholder => "Enter Second Name" %>
+          <%= f.input :customer_email, :label=>false, :placeholder => "Enter Email" %>
+          <%= f.input :customer_address, :label=>false, :placeholder => "Enter Address", as: :string %>
+          <%= f.input :customer_phone, :label=>false, :placeholder => "Enter Phone Number" %>
+          <%= f.input :product_id, :label=>false, collection: Product.available_products.map { |p| [p.name] }, include_blank: false, :prompt =>"Select product" %>
+          <%= f.button :submit, :value=>'Order Now', :class=>"btn btn-primary" %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+    <div class="span3">
+      <a href="#myModal" data-toggle="modal">View Available Products</a>
+    </div>
+  </div>
 </div>

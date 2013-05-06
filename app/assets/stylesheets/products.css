@@ -1,3 +1,15 @@
 .product-image{
   margin: 20px;
 }
+
+.products-details{
+  margin-top: 20px;
+}
+
+.products-add{
+  margin-top: 45px;
+}
+
+.products-add a{
+  cursor: pointer;
+}

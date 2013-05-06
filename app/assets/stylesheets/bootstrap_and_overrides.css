@@ -14,3 +14,7 @@ body {
 form {
   margin: 10px;
 }
+
+#myModal{
+  color: #000000 !important;
+}
