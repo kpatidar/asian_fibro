@@ -1,11 +1,13 @@
 <div id="templatemo_content_wrapper">
   <div class="row-fluid">
     <div class="span6">
-      <p class="em_text">Asian Fibro Plast</p>
-      <p>Sainath complex, CAT road Rau, Indore, India</p>
-      <p>Pin - 453331</p>
-      <p>+919926736374</p>
-      <p>asianfibroplast@gmail.com</p>
+      <div class="contact-us-details">
+        <p class="em_text">Asian Fibro Plast</p>
+        <p>Sainath complex, CAT road Rau, Indore, India</p>
+        <p>Pin - 453331</p>
+        <p>+919926736374</p>
+        <p>asianfibroplast@gmail.com</p>
+      </div>
     </div>
     <div class="span6">
       <div class="products-details">
@@ -13,5 +15,29 @@
       </div>
     </div>
   </div>
+  <div class="google-map">
+    <div id="map-canvas" style="width:800px; height:300px"></div>
+  </div>
 </div>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(22.636599,75.815493);
+    var mapOptions = {
+      zoom: 4,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Rau, Indore, India'
+    });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
