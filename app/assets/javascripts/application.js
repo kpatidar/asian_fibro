@@ -12,6 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require fancybox
 //= require twitter/bootstrap
 //= require rails.validations
 //= require_tree .
+
+$(function () {
+  $('a.fancybox').fancybox({'type' : 'image'});
+});

@@ -72,6 +72,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fancybox-rails (0.2.1)
+      railties (>= 3.1.0)
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
@@ -180,6 +182,7 @@ DEPENDENCIES
   client_side_validations
   coffee-rails (~> 3.2.1)
   debugger
+  fancybox-rails
   jquery-rails
   less-rails
   mysql2
