@@ -3,10 +3,10 @@
     <div class="span6">
       <div class="contact-us-details">
         <p class="em_text">Asian Fibro Plast</p>
-        <p>Sainath complex, CAT road Rau, Indore, India</p>
-        <p>Pin - 453331</p>
-        <p>+919926736374</p>
-        <p>asianfibroplast@gmail.com</p>
+        <p>Add : Sainath complex, CAT road Rau, Indore, India</p>
+        <p>Pin : 453331</p>
+        <p>Contact : +919926736374</p>
+        <p>Email : asianfibroplast@gmail.com</p>
       </div>
     </div>
     <div class="span6">
@@ -23,9 +23,10 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
   function initialize() {
+    $('#map-canvas').attr("style", "width: 940px !important; height: 300px; position: relative; background-color: rgb(229, 227, 223); overflow: hidden;");
     var myLatlng = new google.maps.LatLng(22.636599,75.815493);
     var mapOptions = {
-      zoom: 4,
+      zoom: 10,
       center: myLatlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }

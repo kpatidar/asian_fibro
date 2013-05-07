@@ -1,0 +1,16 @@
+<h3> <%= @product.name %>: </h3>
+
+<div id="templatemo_content_wrapper">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= image_tag("contact_icon.jpg", :class=>"product-image") %>
+    </div>
+    <div class="span6">
+      <div style="margin-top:20px;">
+        <p>Name : <%= @product.name %></p>
+        <p>Price : <%= @product.price %>rs</p>
+        <p>Quality : <%= @product.quality %></p>
+      </div>
+    </div>
+  </div>
+</div>

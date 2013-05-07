@@ -1,0 +1,23 @@
+<h3> Our Products: </h3>
+
+<div id="templatemo_content_wrapper">
+  <% @products.each do |product| %>
+    <div class="row-fluid">
+      <div class="span3">
+        <%= link_to image_tag("contact_icon.jpg", :class=>"product-image", :title => "View Details") %>
+      </div>
+      <div class="span6">
+        <div style="margin-top:20px;">
+          <p>Name : <%= product.name %></p>
+          <p>Price : <%= product.price %>rs</p>
+          <p>Quality : <%= product.quality %></p>
+        </div>
+      </div>
+      <div class="span3">
+        <div class="products-add">
+          <%= link_to "View Details", product_show_path(:id => product.id), :class => "add-order btn btn-success"%>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,4 +1,8 @@
 Asian::Application.routes.draw do
+  get "product/index"
+
+  get "product/show"
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   root :to => 'home#dashboard'
   ActiveAdmin.routes(self)
